@@ -1,0 +1,86 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Just to make it look nicer, optional */
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.quizPaper {
+    height: calc(100vh - 68px); /* subtracting the height taken up by hero; adjust as per your actual hero height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timerHolder {
+    background-color: #4CAF50; 
+    padding: 20px;
+    text-align: center;
+    color: rgba(230, 198, 15, 0.9);
+    font-size: 24px;
+    min-width: 100vw;
+
+}
+
+.starter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popUp {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.popUp h2 {
+    font-size: 24px;
+}
+
+.popUp button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#options {
+    text-align: center;
+    margin: 20px; 
+}
+
+#options button {
+    display: block;
+    margin: 10px auto; 
+    padding: 10px 15px;
+    background-color: black;
+    color: rgba(230, 198, 15, 0.9);
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+    font-size:xx-large;
+}
+
+#options button:hover {
+    box-shadow: 0px 0px 15px green;
+}
+
+#completion {
+    text-align: center; 
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Minute Quiz</title>
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+
+<body>
+
+    <div class="starter" id="startWindow">
+        <div class="popUp">
+            <h2>Welcome to the Quiz!</h2>
+            <p>You will be taking a 2-minute quiz. Remember, wrong answers will deduct time!</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </div>
+    
+
+    <div class="timerHolder">
+        <p id="timer">120</p>
+        <p id="question"></p>
+    </div>
+
+    <div class="quizPaper">
+        <div id="options">
+        </div>
+
+        <div id="completion" style="display:none;">
+            <p>Your score is: <span id="score"></span></p>
+            <input type="text" id="initials" placeholder="Enter your initials" />
+            <button onclick="saveScore()">Save Score</button>
+            <button onclick="viewScores()">View Scores</button>
+            <button onclick="clearScores()">Clear Scores</button>
+            <ul id="scoreList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
